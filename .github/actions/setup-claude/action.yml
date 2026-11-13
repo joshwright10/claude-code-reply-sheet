@@ -1,0 +1,19 @@
+name: Set up Claude Code
+description: Installs the pinned Claude Code CLI used to validate and test the plugin.
+
+inputs:
+  version:
+    description: Claude Code version
+    default: 2.1.323
+
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+      with:
+        node-version: 22
+    - name: Install Claude Code
+      shell: bash
+      run: |
+        npm install -g "@anthropic-ai/claude-code@${{ inputs.version }}"
+        claude --version

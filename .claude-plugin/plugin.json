@@ -1,0 +1,17 @@
+{
+  "name": "reply-sheet",
+  "version": "0.1.0",
+  "description": "Reply to long Claude answers item by item, in a pane beside the chat or in VS Code. Haiku builds the reply file; only answered items go back to Claude.",
+  "author": { "name": "Josh Wright" },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "icons": {
+      "type": "string",
+      "title": "Button icons",
+      "description": "Nerd Font icons on the buttons. on: always (needs a Nerd Font as the terminal font, else empty boxes). auto: only in Ghostty and WezTerm, which ship the icons. off: never.",
+      "options": ["on", "auto", "off"],
+      "default": "on"
+    }
+  }
+}

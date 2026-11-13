@@ -1,0 +1,14 @@
+{
+  "name": "reply-sheet",
+  "owner": { "name": "Josh Wright" },
+  "metadata": {
+    "description": "Claude Code plugin for replying to long Claude answers item by item."
+  },
+  "plugins": [
+    {
+      "name": "reply-sheet",
+      "source": "./",
+      "description": "Reply to long Claude answers item by item, in a pane beside the chat or in VS Code."
+    }
+  ]
+}
